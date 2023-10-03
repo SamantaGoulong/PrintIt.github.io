@@ -17,3 +17,21 @@ const slides = [
 	}
 ]
 
+const flècheGauche = document.querySelector(".arrow_left")
+	console.log (flècheGauche)
+	flècheGauche.addEventListener("click", function () {
+	console.log("vous avez cliqué sur le bouton gauche");
+	
+});
+
+
+const flècheDroite = document.querySelector(".arrow_right")
+	console.log(flècheDroite);
+	flècheDroite.addEventListener("click", function () {
+	console.log("Vous avez cliqué sur le bouton droit")
+	
+	});
+
+
+
+
