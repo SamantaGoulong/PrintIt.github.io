@@ -25,6 +25,7 @@ flecheGauche.addEventListener("click", function () {
 	//console.log("vous avez cliqué sur le bouton gauche");
 	dotSelected[photo].classList.remove("dot_selected")
 	photo--
+
 	// condition
 
 	if (photo === -1) {
@@ -39,6 +40,13 @@ flecheGauche.addEventListener("click", function () {
 	//console.log(photo);
 
 	text--
+	//CONDITION
+	if (text === -1) {
+		text = slides.length -1
+	} 
+	// console.log(text);
+	// CONDITION
+
 	let title = document.querySelector("p");
 	title.innerHTML = ""+ slides[text].tagLine ;
 	console.log(title);
@@ -76,8 +84,6 @@ flecheDroite.addEventListener("click", function () {
 	let title = document.querySelector("p");
 	title.innerHTML = ""+ slides[text].tagLine ;
 	// console.log(title);
-
-
 });
 
 
